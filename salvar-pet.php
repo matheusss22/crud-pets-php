@@ -11,11 +11,9 @@
             $res = $conn->query($sql);
 
             if($res==true) {
-                print "<script>alert('Pet cadastrado com sucesso!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=cadastrar-sucesso'</script>";
             } else {
-                print "<script>alert('Não foi possível realizar o cadastro do pet!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=cadastrar-erro'</script>";
             }
 
             break;
@@ -31,11 +29,9 @@
             $res = $conn->query($sql);
 
             if($res==true) {
-                print "<script>alert('Pet editado com sucesso!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=editar-sucesso'</script>";
             } else {
-                print "<script>alert('Não foi possível editar o pet!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=editar-erro'</script>";
             }
 
             break;
@@ -45,11 +41,9 @@
             $res = $conn->query($sql);
 
             if($res==true) {
-                print "<script>alert('Pet excluído com sucesso!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=excluir-sucesso'</script>";
             } else {
-                print "<script>alert('Não foi possível excluir o oet!')</script>";
-                print "<script>location.href='?page=listar'</script>";
+                print "<script>location.href='?page=listar-db&status=excluir-erro'</script>";
             }
             
             break;

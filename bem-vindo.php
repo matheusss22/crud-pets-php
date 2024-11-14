@@ -1,0 +1,2 @@
+<h1>Bem vindo!</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem voluptate expedita adipisci minima totam, nam ut, itaque, cumque suscipit perferendis voluptates necessitatibus assumenda. Earum accusamus fuga fugiat excepturi tempore.</p>

@@ -1,4 +1,4 @@
-<h1>Novo Pet 🐕</h1>
+<h1>🐾 Cadastre um novo pet 🐾</h1><br>
 
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
@@ -23,6 +23,6 @@
         <input type="text" name="url-foto" class="form-control">
     </div>
     <div class="mb-3 mt-3">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-success">Criar novo Pet</button>
     </div>
 </form>

@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Cadastro de Pets</title>
 </head>
 <body>
-
   <!-- Barra de navegação via Bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid w-100">
@@ -18,14 +18,18 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php" >Casinha</a>
+            <a class="nav-link" href="?page=bem-vindo" >🐕Casinha</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="?page=novo">Novo Pet</a>
+            <a class="nav-link" href="?page=listar-mochy-api">🐕Pets via Mocky API</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="?page=listar">Listar Pets</a>
-          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">🐕Banco de dados local</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="?page=listar-db">🐕Consultar Pets</a></li>
+            <li><a class="dropdown-item" href="?page=novo">🐕Cadastrar novo Pet</a></li>
+          </ul>
+        </li>
         </ul>
       </div>
     </div>
@@ -41,16 +45,20 @@
             case "novo":
               include("novo-pet.php");
               break;
-            case "listar":
-              include("listar-pets.php");
+            case "listar-db":
+              include("listar-pets-db.php");
               break;
+              case "listar-mochy-api":
+                include("listar-pets-mocky-api.php");
+                break;
             case "salvar":
               include("salvar-pet.php");
               break;
             case "editar":
               include("editar-pet.php");
+              break;
             default:
-              print "<h1>Bem vindo!<h1>";
+              include("bem-vindo.php");  
           }
         ?>
       </div>
