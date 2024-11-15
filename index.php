@@ -8,18 +8,16 @@
   <title>Cadastro de Pets</title>
 </head>
 <body>
+  
   <!-- Barra de navegação via Bootstrap-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid w-100">
-      <a class="navbar-brand" href="#">🐶Cadastro de Pets🐶</a>
+      <a class="navbar-brand" href="?page=bem-vindo">🐶Cadastro de Pets🐶</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="?page=bem-vindo" >🐕Casinha</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="?page=listar-mochy-api">🐕Pets via Mocky API</a>
           </li>
