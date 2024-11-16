@@ -38,25 +38,27 @@
     <div class="row mt-5">
       <div class="col mt-5">
         <?php
-          include("config.php");
           switch(@$_REQUEST["page"]){
+            case "listar-mochy-api":
+              include("listar-pets-mocky-api.php");
+              break;
             case "novo":
               include("novo-pet.php");
               break;
             case "listar-db":
+              include("config.php");
               include("listar-pets-db.php");
               break;
-              case "listar-mochy-api":
-                include("listar-pets-mocky-api.php");
-                break;
             case "salvar":
+              include("config.php");
               include("salvar-pet.php");
               break;
             case "editar":
+              include("config.php");
               include("editar-pet.php");
               break;
             default:
-              include("bem-vindo.php");  
+              include("bem-vindo.php");
           }
         ?>
       </div>

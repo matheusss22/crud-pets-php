@@ -1,5 +1,6 @@
 <h1>🐾 Lista dos pets cadastrados | Mocky API🐾</h1><br>
 
+<!-- Requisição do Mocky -->
 <?php
 try {
     $url = 'https://run.mocky.io/v3/d6551618-9492-4b8c-bdc4-460005006693';

@@ -13,7 +13,7 @@
             <h2 class="mb-4 text-center text-md-start">Formulário</h2>
 
             <form action="?page=salvar" method="POST">
-                <input type="hidden" name="acao" value="editar">
+                <input type="hidden" name="action" value="editar">
                 <input type="hidden" name="id" value="<?php print $row->id;?>">
                 <div class="md-3 mt-2">
                     <label>Nome</label>

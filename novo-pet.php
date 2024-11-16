@@ -1,7 +1,7 @@
 <h1>🐾 Cadastre um novo pet 🐾</h1><br>
 
 <form action="?page=salvar" method="POST">
-    <input type="hidden" name="acao" value="cadastrar">
+    <input type="hidden" name="action" value="cadastrar">
     <div class="md-3 mt-2">
         <label>Nome</label>
         <input type="text" name="nome" class="form-control">

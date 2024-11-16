@@ -6,22 +6,22 @@
         <?php
         switch ($_GET['status']) {
             case 'cadastrar-sucesso':
-                echo "Cadastro realizado com sucesso!";
+                print "Cadastro realizado com sucesso!";
                 break;
             case 'cadastrar-erro':
-                echo "Falha ao realizar o cadastro. Tente novamente.";
+                print "Falha ao realizar o cadastro. Tente novamente.";
                 break;
             case 'editar-sucesso':
-                echo "Edição realizada com sucesso!";
+                print "Edição realizada com sucesso!";
                 break;
             case 'editar-erro':
-                echo "Falha ao realizar a edição. Tente novamente.";
+                print "Falha ao realizar a edição. Tente novamente.";
                 break;
             case 'excluir-sucesso':
-                echo "Pet deletado com sucesso!";
+                print "Pet deletado com sucesso!";
                 break;
             case 'excluir-erro':
-                echo "Falha ao deletar o pet. Tente novamente.";
+                print "Falha ao deletar o pet. Tente novamente.";
                 break;
         }
         ?>
@@ -70,7 +70,7 @@ try {
                             </button>
                         </td>
                         <td style="text-align: center; vertical-align: middle;">
-                            <button onclick="if(confirm('Tem certeza que deseja excluir?')) { location.href='?page=salvar&acao=excluir&id=<?= htmlspecialchars($row['id']); ?>' }" 
+                            <button onclick="if(confirm('Tem certeza que deseja excluir?')) { location.href='?page=salvar&action=excluir&id=<?= htmlspecialchars($row['id']); ?>' }" 
                                     class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i> Excluir
                             </button>
@@ -84,9 +84,11 @@ try {
     <?php endif; 
 
 } catch (Exception $e) { ?>
+
     <!-- Mensagem de erro -->
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <?= htmlspecialchars($e->getMessage()); ?>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+
 <?php } ?>
